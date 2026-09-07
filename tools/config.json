@@ -1,0 +1,23 @@
+{
+  "r2": {
+    "account_id": "",
+    "access_key_id": "",
+    "secret_access_key": "",
+    "bucket": "",
+    "public_base_url": ""
+  },
+  "supabase": {
+    "public_base_url": "https://ovtlzmahoxqokgcmlpeb.supabase.co/storage/v1/object/public/musicaa/"
+  },
+  "jorge": {
+    "r2_folder": "jorge"
+  },
+  "djgeeorge": {
+    "r2_folder": "djgeeorge",
+    "remote_audio": "supabase",
+    "mapeo_file": "mapeo_djgeeorge.json"
+  },
+  "pedidas": {
+    "r2_folder": "pedidas"
+  }
+}
