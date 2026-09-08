@@ -406,5 +406,21 @@
     "audio": "playlist_jorge/C%20Mar%C3%AD%20-%20Criminal.mp3",
     "cover": "playlist_jorge/covers/C%20Mar%C3%AD%20-%20Criminal.jpg",
     "duration": 174.55
+  },
+  {
+    "title": "TEDDY BEAR",
+    "artist": "Lewis Potter",
+    "album": "BRITISHBOY",
+    "audio": "playlist_jorge/Lewis%20Potter%20-%20TEDDY%20BEAR.mp3",
+    "cover": "playlist_jorge/covers/Lewis%20Potter%20-%20TEDDY%20BEAR.jpg",
+    "duration": 120.63
+  },
+  {
+    "title": "2late",
+    "artist": "MVRK",
+    "album": "Please Behave Radio Vol.2",
+    "audio": "playlist_jorge/MVRK%20-%202late.mp3",
+    "cover": "playlist_jorge/covers/MVRK%20-%202late.jpg",
+    "duration": 138.87
   }
 ]
