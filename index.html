@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="theme-color" content="#080808">
 <title>JORGEFLOW PLAYER</title>
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css?v=2">
 </head>
 <body>
 <div id="welcomeScreen" class="welcome-screen">
@@ -41,6 +41,21 @@
       <button class="nav-item" data-playlist="pedidas">&#128221; <span>PEDIDAS</span></button>
       <button id="requestNav" class="nav-item request-nav">&#9733; <span>PIDE TU CANCIÓN</span></button>
     </nav>
+    <div class="theme-switcher">
+      <button id="themeButton" class="theme-toggle" type="button" title="Cambiar tema">
+        <span class="theme-toggle-icon">&#127912;</span>
+        <span>TEMA</span>
+      </button>
+      <div id="themePanel" class="theme-panel" hidden>
+        <button class="theme-option" data-theme="dark" type="button"><span class="theme-swatch theme-swatch-dark"></span>Oscuro</button>
+        <button class="theme-option" data-theme="light" type="button"><span class="theme-swatch theme-swatch-light"></span>Claro</button>
+        <button class="theme-option" data-theme="red" type="button"><span class="theme-swatch theme-swatch-red"></span>Negro y rojo</button>
+        <button class="theme-option" data-theme="green" type="button"><span class="theme-swatch theme-swatch-green"></span>Blanco y verde</button>
+        <button class="theme-option" data-theme="purple" type="button"><span class="theme-swatch theme-swatch-purple"></span>Morado</button>
+        <button class="theme-option" data-theme="blue" type="button"><span class="theme-swatch theme-swatch-blue"></span>Azul</button>
+        <button class="theme-option" data-theme="apple" type="button"><span class="theme-swatch theme-swatch-apple"></span>Estilo Apple</button>
+      </div>
+    </div>
     <div class="side-bottom">
       <div class="small-label">BIBLIOTECA LOCAL</div>
       <div id="sideCount">0 canciones</div>
@@ -142,6 +157,6 @@
   </div>
 </div>
 
-<script src="script.js" charset="utf-8"></script>
+<script src="script.js?v=2" charset="utf-8"></script>
 </body>
 </html>

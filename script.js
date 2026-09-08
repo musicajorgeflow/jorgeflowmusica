@@ -26,7 +26,10 @@ const state = {
   shuffle: false,
   repeat: false,
   queue: [],
-  queueIndex: 0
+  queueIndex: 0,
+  // Only guards the current page load: it must go back to false on every
+  // reload, so the password gate never becomes a one-time permanent unlock.
+  jorgeUnlocked: false
 };
 
 const $ = id => document.getElementById(id);
@@ -44,7 +47,8 @@ const el = {
   passwordError: $("passwordError"), passwordCancel: $("passwordCancel"),
   playerError: $("playerError"), playerErrorMsg: $("playerErrorMsg"),
   retryTrack: $("retryTrack"), skipError: $("skipError"),
-  welcomeScreen: $("welcomeScreen")
+  welcomeScreen: $("welcomeScreen"),
+  themeButton: $("themeButton"), themePanel: $("themePanel")
 };
 
 function hideWelcome() { el.welcomeScreen.hidden = true; }
@@ -341,9 +345,13 @@ async function tryUnlock() {
 }
 
 async function enterPlaylist(key) {
-  if (key === "jorge") {
+  // Once unlocked, stays unlocked while browsing other playlists and coming
+  // back to JORGE — it only resets when the page is reloaded (state.jorgeUnlocked
+  // lives in memory only, never in localStorage/sessionStorage).
+  if (key === "jorge" && !state.jorgeUnlocked) {
     const ok = await openJorgePassword();
     if (!ok) return;
+    state.jorgeUnlocked = true;
   }
   document.querySelectorAll(".nav-item[data-playlist]").forEach(x => x.classList.toggle("active", x.dataset.playlist === key));
   closeRequests();
@@ -425,6 +433,52 @@ document.onkeydown = e => {
 };
 
 document.querySelectorAll("#welcomeScreen [data-playlist]").forEach(b => b.onclick = () => enterPlaylist(b.dataset.playlist));
+
+// --- Selector de tema ---
+// Unlike the password gate, the chosen theme is a display preference, so it
+// is remembered across reloads via localStorage (never affects the JORGE
+// password lock, which always resets on reload).
+const THEME_META_COLOR = {
+  dark: "#080808", light: "#f4f4f6", red: "#0a0505", green: "#f4faf5",
+  purple: "#0f0819", blue: "#050a14", apple: "#f5f5f7"
+};
+const THEME_STORAGE_KEY = "jorgeflow_theme";
+
+function applyTheme(name) {
+  if (!THEME_META_COLOR[name]) name = "dark";
+  document.documentElement.setAttribute("data-theme", name);
+  const meta = document.querySelector('meta[name="theme-color"]');
+  if (meta) meta.setAttribute("content", THEME_META_COLOR[name]);
+  document.querySelectorAll(".theme-option").forEach(b => b.classList.toggle("active", b.dataset.theme === name));
+  try { localStorage.setItem(THEME_STORAGE_KEY, name); } catch (e) { /* almacenamiento no disponible */ }
+}
+
+function initTheme() {
+  let saved = "dark";
+  try { saved = localStorage.getItem(THEME_STORAGE_KEY) || "dark"; } catch (e) { /* almacenamiento no disponible */ }
+  applyTheme(saved);
+}
+
+if (el.themeButton && el.themePanel) {
+  el.themeButton.onclick = e => {
+    e.stopPropagation();
+    el.themePanel.hidden = !el.themePanel.hidden;
+  };
+  el.themePanel.querySelectorAll(".theme-option").forEach(b => b.onclick = () => {
+    applyTheme(b.dataset.theme);
+    el.themePanel.hidden = true;
+  });
+  document.addEventListener("click", e => {
+    if (!el.themePanel.hidden && !el.themePanel.contains(e.target) && e.target !== el.themeButton && !el.themeButton.contains(e.target)) {
+      el.themePanel.hidden = true;
+    }
+  });
+  document.addEventListener("keydown", e => {
+    if (e.key === "Escape") el.themePanel.hidden = true;
+  });
+}
+
+initTheme();
 
 (async () => {
   await Promise.all(Object.keys(CONFIG).map(loadManifest));
