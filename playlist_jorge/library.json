@@ -376,18 +376,10 @@
     "duration": 163.37
   },
   {
-    "title": "PLAYLIST",
-    "artist": "Alex Brown",
-    "album": "PLAYLIST",
-    "audio": "playlist_jorge/Alex-Brown-PLAYLIST.mp3",
-    "cover": "",
-    "duration": 124.34
-  },
-  {
     "title": "Espiral LOVE <3",
     "artist": "Aïssa",
     "album": "EstapasandoBB",
-    "audio": "playlist_jorge/A%C3%AFssa-Espiral-LOVE-3.mp3",
+    "audio": "playlist_jorge/Ai%CC%88ssa-Espiral-LOVE-3%202.12.21.mp3",
     "cover": "",
     "duration": 161.31
   },
@@ -395,9 +387,17 @@
     "title": "NO EST(hoy)BB",
     "artist": "Aïssa",
     "album": "EstapasandoBB",
-    "audio": "playlist_jorge/A%C3%AFssa-NO-EST_hoy_BB.mp3",
+    "audio": "playlist_jorge/Ai%CC%88ssa-NO-EST_hoy_BB%202.12.21.mp3",
     "cover": "",
     "duration": 145.55
+  },
+  {
+    "title": "PLAYLIST",
+    "artist": "Alex Brown",
+    "album": "PLAYLIST",
+    "audio": "playlist_jorge/Alex-Brown-PLAYLIST%202.12.21.mp3",
+    "cover": "",
+    "duration": 124.34
   },
   {
     "title": "Criminal",
