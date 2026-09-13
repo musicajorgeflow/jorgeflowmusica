@@ -1,7 +1,7 @@
 const CONFIG = {
-  jorge: { name: "PLAYLIST JORGE", desc: "Tu música personal", manifest: "playlist_jorge/library.json" },
-  djgeeorge: { name: "DJGEEORGE", desc: "Mashups, edits y producciones de DJGEEORGE", manifest: "playlist_djgeeorge/library.json" },
-  pedidas: { name: "PEDIDAS", desc: "Canciones pedidas por la gente", manifest: "playlist_pedidas/library.json" }
+  jorge: { name: "PLAYLIST JORGE", desc: "mis palos", manifest: "playlist_jorge/library.json" },
+  djgeeorge: { name: "DJGEEORGE", desc: "las mierdas que hago yo 😁", manifest: "playlist_djgeeorge/library.json" },
+  pedidas: { name: "PEDIDAS", desc: "Canciones pedidas por la peña", manifest: "playlist_pedidas/library.json" }
 };
 
 const REQUEST_CONFIG = {
