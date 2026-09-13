@@ -376,19 +376,51 @@
     "duration": 163.37
   },
   {
+    "title": "14 FEBREROS",
+    "artist": "Quevedo/Sin Nombre",
+    "album": "14 FEBREROS",
+    "audio": "playlist_jorge/14%20FEBREROS.mp3",
+    "cover": "playlist_jorge/covers/14%20FEBREROS.jpg",
+    "duration": 172.46
+  },
+  {
+    "title": "305 LUV STORY",
+    "artist": "Gonzy",
+    "album": "305 LUV STORY",
+    "audio": "playlist_jorge/305%20LUV%20STORY.mp3",
+    "cover": "playlist_jorge/covers/305%20LUV%20STORY.jpg",
+    "duration": 216.95
+  },
+  {
+    "title": "512",
+    "artist": "Mora/JHAYCO",
+    "album": "512",
+    "audio": "playlist_jorge/512.mp3",
+    "cover": "playlist_jorge/covers/512.jpg",
+    "duration": 193.7
+  },
+  {
+    "title": "AHORA QUÉ",
+    "artist": "Quevedo",
+    "album": "AHORA QUÉ",
+    "audio": "playlist_jorge/AHORA%20QUE%CC%81.mp3",
+    "cover": "playlist_jorge/covers/AHORA%20QUE%CC%81.jpg",
+    "duration": 171.47
+  },
+  {
     "title": "Espiral LOVE <3",
-    "artist": "Aïssa",
+    "artist": "Aissa",
     "album": "EstapasandoBB",
-    "audio": "playlist_jorge/Ai%CC%88ssa-Espiral-LOVE-3%202.12.21.mp3",
-    "cover": "playlist_jorge/covers/Ai%CC%88ssa-Espiral-LOVE-3%202.12.21.png",
+    "audio": "playlist_jorge/Aissa%20-%20Espiral%20LOVE%20%3C3.mp3",
+    "cover": "playlist_jorge/covers/Aissa%20-%20Espiral%20LOVE%20_3.jpg",
     "duration": 161.31
   },
   {
     "title": "NO EST(hoy)BB",
-    "artist": "Aïssa",
+    "artist": "Aissa",
     "album": "EstapasandoBB",
-    "audio": "playlist_jorge/Ai%CC%88ssa-NO-EST_hoy_BB%202.12.21.mp3",
-    "cover": "playlist_jorge/covers/Ai%CC%88ssa-NO-EST_hoy_BB%202.12.21.png",
+    "audio": "playlist_jorge/Aissa%20-%20NO%20EST%28hoy%29BB.mp3",
+    "cover": "playlist_jorge/covers/Aissa%20-%20NO%20EST%28hoy%29BB.jpg",
     "duration": 145.55
   },
   {
@@ -398,6 +430,22 @@
     "audio": "playlist_jorge/Alex-Brown-PLAYLIST%202.12.21.mp3",
     "cover": "playlist_jorge/covers/Alex-Brown-PLAYLIST%202.12.21.jpg",
     "duration": 124.34
+  },
+  {
+    "title": "AMANECIÓ",
+    "artist": "Quevedo/De La Rose/De La Ghetto",
+    "album": "AMANECIÓ",
+    "audio": "playlist_jorge/AMANECIO%CC%81.mp3",
+    "cover": "playlist_jorge/covers/AMANECIO%CC%81.jpg",
+    "duration": 255.4
+  },
+  {
+    "title": "APA",
+    "artist": "Mora/Quevedo",
+    "album": "APA",
+    "audio": "playlist_jorge/APA.mp3",
+    "cover": "playlist_jorge/covers/APA.jpg",
+    "duration": 199.89
   },
   {
     "title": "Criminal",
@@ -416,6 +464,190 @@
     "duration": 187.38
   },
   {
+    "title": "CALENTÓN",
+    "artist": "Mora",
+    "album": "CALENTÓN",
+    "audio": "playlist_jorge/CALENTO%CC%81N.mp3",
+    "cover": "playlist_jorge/covers/CALENTO%CC%81N.jpg",
+    "duration": 203.02
+  },
+  {
+    "title": "CASUALIDAD",
+    "artist": "Mora",
+    "album": "CASUALIDAD",
+    "audio": "playlist_jorge/CASUALIDAD.mp3",
+    "cover": "playlist_jorge/covers/CASUALIDAD.jpg",
+    "duration": 183.75
+  },
+  {
+    "title": "CHAPIADORA.COM",
+    "artist": "Quevedo",
+    "album": "CHAPIADORA.COM",
+    "audio": "playlist_jorge/CHAPIADORA.COM.mp3",
+    "cover": "playlist_jorge/covers/CHAPIADORA.COM.jpg",
+    "duration": 197.49
+  },
+  {
+    "title": "COMO HAS ESTAU?",
+    "artist": "Mora",
+    "album": "COMO HAS ESTAU?",
+    "audio": "playlist_jorge/COMO%20HAS%20ESTAU%3F.mp3",
+    "cover": "playlist_jorge/covers/COMO%20HAS%20ESTAU_.jpg",
+    "duration": 127.37
+  },
+  {
+    "title": "CUÉNTALE",
+    "artist": "Quevedo",
+    "album": "CUÉNTALE",
+    "audio": "playlist_jorge/CUE%CC%81NTALE.mp3",
+    "cover": "playlist_jorge/covers/CUE%CC%81NTALE.jpg",
+    "duration": 198.06
+  },
+  {
+    "title": "DAME",
+    "artist": "Quevedo/Omar Montes",
+    "album": "DAME",
+    "audio": "playlist_jorge/DAME.mp3",
+    "cover": "playlist_jorge/covers/DAME.jpg",
+    "duration": 231.47
+  },
+  {
+    "title": "DOMINGO DE BOTE",
+    "artist": "Mora",
+    "album": "DOMINGO DE BOTE",
+    "audio": "playlist_jorge/DOMINGO%20DE%20BOTE.mp3",
+    "cover": "playlist_jorge/covers/DOMINGO%20DE%20BOTE.jpg",
+    "duration": 190.8
+  },
+  {
+    "title": "DONDE QUIERO ESTAR",
+    "artist": "Quevedo",
+    "album": "DONDE QUIERO ESTAR",
+    "audio": "playlist_jorge/DONDE%20QUIERO%20ESTAR.mp3",
+    "cover": "playlist_jorge/covers/DONDE%20QUIERO%20ESTAR.jpg",
+    "duration": 200.52
+  },
+  {
+    "title": "DURO",
+    "artist": "Quevedo",
+    "album": "DURO",
+    "audio": "playlist_jorge/DURO.mp3",
+    "cover": "playlist_jorge/covers/DURO.jpg",
+    "duration": 162.25
+  },
+  {
+    "title": "EL ESTRIBILLO",
+    "artist": "Quevedo",
+    "album": "EL ESTRIBILLO",
+    "audio": "playlist_jorge/EL%20ESTRIBILLO.mp3",
+    "cover": "playlist_jorge/covers/EL%20ESTRIBILLO.jpg",
+    "duration": 161.49
+  },
+  {
+    "title": "EN LA ORILLA",
+    "artist": "Mora",
+    "album": "EN LA ORILLA",
+    "audio": "playlist_jorge/EN%20LA%20ORILLA.mp3",
+    "cover": "playlist_jorge/covers/EN%20LA%20ORILLA.jpg",
+    "duration": 235.49
+  },
+  {
+    "title": "ESTÁ EN CASA",
+    "artist": "Quevedo",
+    "album": "ESTÁ EN CASA",
+    "audio": "playlist_jorge/ESTA%CC%81%20EN%20CASA.mp3",
+    "cover": "playlist_jorge/covers/ESTA%CC%81%20EN%20CASA.jpg",
+    "duration": 132.39
+  },
+  {
+    "title": "ÉRAMOS DOS",
+    "artist": "Quevedo",
+    "album": "ÉRAMOS DOS",
+    "audio": "playlist_jorge/E%CC%81RAMOS%20DOS.mp3",
+    "cover": "playlist_jorge/covers/E%CC%81RAMOS%20DOS.jpg",
+    "duration": 174.47
+  },
+  {
+    "title": "FRIKI",
+    "artist": "Gonzy",
+    "album": "FRIKI",
+    "audio": "playlist_jorge/FRIKI.mp3",
+    "cover": "playlist_jorge/covers/FRIKI.jpg",
+    "duration": 189.13
+  },
+  {
+    "title": "GRAN VÍA",
+    "artist": "Quevedo/Aitana",
+    "album": "GRAN VÍA",
+    "audio": "playlist_jorge/GRAN%20VI%CC%81A.mp3",
+    "cover": "playlist_jorge/covers/GRAN%20VI%CC%81A.jpg",
+    "duration": 213.58
+  },
+  {
+    "title": "HALO",
+    "artist": "Quevedo/La Pantera",
+    "album": "HALO",
+    "audio": "playlist_jorge/HALO.mp3",
+    "cover": "playlist_jorge/covers/HALO.jpg",
+    "duration": 181.32
+  },
+  {
+    "title": "HIJO DE VOLCÁN",
+    "artist": "Quevedo/Los Gofiones",
+    "album": "HIJO DE VOLCÁN",
+    "audio": "playlist_jorge/HIJO%20DE%20VOLCA%CC%81N.mp3",
+    "cover": "playlist_jorge/covers/HIJO%20DE%20VOLCA%CC%81N.jpg",
+    "duration": 348.76
+  },
+  {
+    "title": "IGUALES",
+    "artist": "Quevedo",
+    "album": "IGUALES",
+    "audio": "playlist_jorge/IGUALES.mp3",
+    "cover": "playlist_jorge/covers/IGUALES.jpg",
+    "duration": 183.35
+  },
+  {
+    "title": "INTRO - SPEECH CRUZZI",
+    "artist": "Quevedo/Cruzzi",
+    "album": "INTRO - SPEECH CRUZZI",
+    "audio": "playlist_jorge/INTRO%20-%20SPEECH%20CRUZZI.mp3",
+    "cover": "playlist_jorge/covers/INTRO%20-%20SPEECH%20CRUZZI.jpg",
+    "duration": 60.89
+  },
+  {
+    "title": "Jordan I",
+    "artist": "SAIKO/Quevedo/La mano de oro",
+    "album": "Jordan I",
+    "audio": "playlist_jorge/Jordan%20I.mp3",
+    "cover": "playlist_jorge/covers/Jordan%20I.jpg",
+    "duration": 192.24
+  },
+  {
+    "title": "KASSANDRA",
+    "artist": "Quevedo",
+    "album": "KASSANDRA",
+    "audio": "playlist_jorge/KASSANDRA.mp3",
+    "cover": "playlist_jorge/covers/KASSANDRA.jpg",
+    "duration": 183.22
+  },
+  {
+    "title": "LA 125",
+    "artist": "Quevedo/Yung Beef",
+    "album": "LA 125",
+    "audio": "playlist_jorge/LA%20125.mp3",
+    "cover": "playlist_jorge/covers/LA%20125.jpg",
+    "duration": 194.35
+  },
+  {
+    "title": "LA GRACIOSA",
+    "artist": "Quevedo/Elvis Crespo",
+    "album": "LA GRACIOSA",
+    "audio": "playlist_jorge/LA%20GRACIOSA.mp3",
+    "cover": "playlist_jorge/covers/LA%20GRACIOSA.jpg",
+    "duration": 257.75
+  },
+  {
     "title": "TEDDY BEAR",
     "artist": "Lewis Potter",
     "album": "BRITISHBOY",
@@ -424,11 +656,211 @@
     "duration": 120.63
   },
   {
+    "title": "LISBOA",
+    "artist": "Quevedo",
+    "album": "LISBOA",
+    "audio": "playlist_jorge/LISBOA.mp3",
+    "cover": "playlist_jorge/covers/LISBOA.jpg",
+    "duration": 151.35
+  },
+  {
+    "title": "LOS DÍAS CONTADOS",
+    "artist": "Quevedo/Rels B",
+    "album": "LOS DÍAS CONTADOS",
+    "audio": "playlist_jorge/LOS%20DI%CC%81AS%20CONTADOS.mp3",
+    "cover": "playlist_jorge/covers/LOS%20DI%CC%81AS%20CONTADOS.jpg",
+    "duration": 161.99
+  },
+  {
+    "title": "LUCES AZULES",
+    "artist": "Quevedo",
+    "album": "LUCES AZULES",
+    "audio": "playlist_jorge/LUCES%20AZULES.mp3",
+    "cover": "playlist_jorge/covers/LUCES%20AZULES.jpg",
+    "duration": 161.02
+  },
+  {
+    "title": "ME FALTA ALGO",
+    "artist": "Quevedo",
+    "album": "ME FALTA ALGO",
+    "audio": "playlist_jorge/ME%20FALTA%20ALGO.mp3",
+    "cover": "playlist_jorge/covers/ME%20FALTA%20ALGO.jpg",
+    "duration": 192.55
+  },
+  {
+    "title": "MI BALCÓN",
+    "artist": "Quevedo",
+    "album": "MI BALCÓN",
+    "audio": "playlist_jorge/MI%20BALCO%CC%81N.mp3",
+    "cover": "playlist_jorge/covers/MI%20BALCO%CC%81N.jpg",
+    "duration": 256.24
+  },
+  {
+    "title": "MODELITO",
+    "artist": "Mora/YOVNGCHIMI",
+    "album": "MODELITO",
+    "audio": "playlist_jorge/MODELITO.mp3",
+    "cover": "playlist_jorge/covers/MODELITO.jpg",
+    "duration": 190.56
+  },
+  {
+    "title": "MR. MOONDIAL",
+    "artist": "Quevedo/Pitbull",
+    "album": "MR. MOONDIAL",
+    "audio": "playlist_jorge/MR.%20MOONDIAL.mp3",
+    "cover": "playlist_jorge/covers/MR.%20MOONDIAL.jpg",
+    "duration": 165.8
+  },
+  {
+    "title": "MUÑECA",
+    "artist": "Quevedo/JC Reyes",
+    "album": "MUÑECA",
+    "audio": "playlist_jorge/MUN%CC%83ECA.mp3",
+    "cover": "playlist_jorge/covers/MUN%CC%83ECA.jpg",
+    "duration": 210.81
+  },
+  {
     "title": "2late",
     "artist": "MVRK",
     "album": "Please Behave Radio Vol.2",
     "audio": "playlist_jorge/MVRK%20-%202late.mp3",
     "cover": "playlist_jorge/covers/MVRK%20-%202late.jpg",
     "duration": 138.87
+  },
+  {
+    "title": "NANA",
+    "artist": "Quevedo/GARZI",
+    "album": "NANA",
+    "audio": "playlist_jorge/NANA.mp3",
+    "cover": "playlist_jorge/covers/NANA.jpg",
+    "duration": 157.57
+  },
+  {
+    "title": "No Me digas Nada",
+    "artist": "Quevedo",
+    "album": "No Me digas Nada",
+    "audio": "playlist_jorge/No%20Me%20digas%20Nada.mp3",
+    "cover": "playlist_jorge/covers/No%20Me%20digas%20Nada.jpg",
+    "duration": 148.43
+  },
+  {
+    "title": "NOEMÚ",
+    "artist": "Quevedo",
+    "album": "NOEMÚ",
+    "audio": "playlist_jorge/NOEMU%CC%81.mp3",
+    "cover": "playlist_jorge/covers/NOEMU%CC%81.jpg",
+    "duration": 206.94
+  },
+  {
+    "title": "PLAYA DEL INGLÉS",
+    "artist": "Quevedo/Myke Towers",
+    "album": "PLAYA DEL INGLÉS",
+    "audio": "playlist_jorge/PLAYA%20DEL%20INGLE%CC%81S.mp3",
+    "cover": "playlist_jorge/covers/PLAYA%20DEL%20INGLE%CC%81S.jpg",
+    "duration": 237.58
+  },
+  {
+    "title": "PUNTO G",
+    "artist": "Quevedo",
+    "album": "PUNTO G",
+    "audio": "playlist_jorge/PUNTO%20G.mp3",
+    "cover": "playlist_jorge/covers/PUNTO%20G.jpg",
+    "duration": 151.35
+  },
+  {
+    "title": "QUE ASCO DE TODO",
+    "artist": "Quevedo",
+    "album": "QUE ASCO DE TODO",
+    "audio": "playlist_jorge/QUE%20ASCO%20DE%20TODO.mp3",
+    "cover": "playlist_jorge/covers/QUE%20ASCO%20DE%20TODO.jpg",
+    "duration": 190.35
+  },
+  {
+    "title": "QUE HABILIDAD",
+    "artist": "Mora",
+    "album": "QUE HABILIDAD",
+    "audio": "playlist_jorge/QUE%20HABILIDAD.mp3",
+    "cover": "playlist_jorge/covers/QUE%20HABILIDAD.jpg",
+    "duration": 235.05
+  },
+  {
+    "title": "Rimmel",
+    "artist": "Quevedo",
+    "album": "Rimmel",
+    "audio": "playlist_jorge/Rimmel.mp3",
+    "cover": "playlist_jorge/covers/Rimmel.jpg",
+    "duration": 180.61
+  },
+  {
+    "title": "SHIBATTO",
+    "artist": "Quevedo",
+    "album": "SHIBATTO",
+    "audio": "playlist_jorge/SHIBATTO.mp3",
+    "cover": "playlist_jorge/covers/SHIBATTO.jpg",
+    "duration": 138.27
+  },
+  {
+    "title": "Sikora",
+    "artist": "SAIKO/The Prodigiez",
+    "album": "Sikora",
+    "audio": "playlist_jorge/Sikora.mp3",
+    "cover": "playlist_jorge/covers/Sikora.jpg",
+    "duration": 161.28
+  },
+  {
+    "title": "SIN SEÑAL",
+    "artist": "Quevedo/Ovy On The Drums",
+    "album": "SIN SEÑAL",
+    "audio": "playlist_jorge/SIN%20SEN%CC%83AL.mp3",
+    "cover": "playlist_jorge/covers/SIN%20SEN%CC%83AL.jpg",
+    "duration": 185.13
+  },
+  {
+    "title": "TE FALLÉ",
+    "artist": "Quevedo/Sech",
+    "album": "TE FALLÉ",
+    "audio": "playlist_jorge/TE%20FALLE%CC%81.mp3",
+    "cover": "playlist_jorge/covers/TE%20FALLE%CC%81.jpg",
+    "duration": 219.51
+  },
+  {
+    "title": "Tuenti - Remix",
+    "artist": "Raul Clyde/SAIKO",
+    "album": "Tuenti - Remix",
+    "audio": "playlist_jorge/Tuenti%20-%20Remix.mp3",
+    "cover": "playlist_jorge/covers/Tuenti%20-%20Remix.jpg",
+    "duration": 182.41
+  },
+  {
+    "title": "Universitaria",
+    "artist": "Quevedo",
+    "album": "Universitaria",
+    "audio": "playlist_jorge/Universitaria.mp3",
+    "cover": "playlist_jorge/covers/Universitaria.jpg",
+    "duration": 133.07
+  },
+  {
+    "title": "VISTA AL MAR",
+    "artist": "Quevedo",
+    "album": "VISTA AL MAR",
+    "audio": "playlist_jorge/VISTA%20AL%20MAR.mp3",
+    "cover": "playlist_jorge/covers/VISTA%20AL%20MAR.jpg",
+    "duration": 180.72
+  },
+  {
+    "title": "WANDA",
+    "artist": "Quevedo",
+    "album": "WANDA",
+    "audio": "playlist_jorge/WANDA.mp3",
+    "cover": "playlist_jorge/covers/WANDA.jpg",
+    "duration": 160.94
+  },
+  {
+    "title": "YANKEE",
+    "artist": "Quevedo",
+    "album": "YANKEE",
+    "audio": "playlist_jorge/YANKEE.mp3",
+    "cover": "playlist_jorge/covers/YANKEE.jpg",
+    "duration": 194.46
   }
 ]
