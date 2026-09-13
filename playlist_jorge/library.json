@@ -456,6 +456,14 @@
     "duration": 199.89
   },
   {
+    "title": "BANSHEE",
+    "artist": "Los Diozes/Hidalgo",
+    "album": "MESÓN MASÓN",
+    "audio": "playlist_jorge/BANSHEE.mp3",
+    "cover": "playlist_jorge/covers/BANSHEE.jpg",
+    "duration": 236.33
+  },
+  {
     "title": "BbY WOW",
     "artist": "KAROL G/Judeline/rusowsky",
     "album": "BbY WOW",
@@ -488,6 +496,14 @@
     "duration": 203.02
   },
   {
+    "title": "CALVO",
+    "artist": "Los Diozes",
+    "album": "MESÓN MASÓN",
+    "audio": "playlist_jorge/CALVO.mp3",
+    "cover": "playlist_jorge/covers/CALVO.jpg",
+    "duration": 196.57
+  },
+  {
     "title": "CASUALIDAD",
     "artist": "Mora",
     "album": "CASUALIDAD",
@@ -502,6 +518,14 @@
     "audio": "playlist_jorge/CHAPIADORA.COM.mp3",
     "cover": "playlist_jorge/covers/CHAPIADORA.COM.jpg",
     "duration": 197.49
+  },
+  {
+    "title": "CHEKI",
+    "artist": "Los Diozes/Xokas",
+    "album": "MESÓN MASÓN",
+    "audio": "playlist_jorge/CHEKI.mp3",
+    "cover": "playlist_jorge/covers/CHEKI.jpg",
+    "duration": 199.55
   },
   {
     "title": "CHUOS",
@@ -568,6 +592,14 @@
     "duration": 231.47
   },
   {
+    "title": "DISOCIANDO",
+    "artist": "Los Diozes/Orslok",
+    "album": "MESÓN MASÓN",
+    "audio": "playlist_jorge/DISOCIANDO.mp3",
+    "cover": "playlist_jorge/covers/DISOCIANDO.jpg",
+    "duration": 273.32
+  },
+  {
     "title": "Do You Remember - Remix",
     "artist": "Xiyo/Fernandezz/SAIKO/Eix/Gotay \"El Autentiko\"",
     "album": "Do You Remember - Remix",
@@ -590,6 +622,14 @@
     "audio": "playlist_jorge/DONDE%20QUIERO%20ESTAR.mp3",
     "cover": "playlist_jorge/covers/DONDE%20QUIERO%20ESTAR.jpg",
     "duration": 200.52
+  },
+  {
+    "title": "DORMÍA",
+    "artist": "Los Diozes",
+    "album": "MESÓN MASÓN",
+    "audio": "playlist_jorge/DORMI%CC%81A.mp3",
+    "cover": "playlist_jorge/covers/DORMI%CC%81A.jpg",
+    "duration": 157.39
   },
   {
     "title": "DURO",
@@ -632,6 +672,22 @@
     "duration": 174.47
   },
   {
+    "title": "FELA",
+    "artist": "Los Diozes/Foyone",
+    "album": "MESÓN MASÓN",
+    "audio": "playlist_jorge/FELA.mp3",
+    "cover": "playlist_jorge/covers/FELA.jpg",
+    "duration": 139.21
+  },
+  {
+    "title": "FRENIYO",
+    "artist": "Los Diozes",
+    "album": "MESÓN MASÓN",
+    "audio": "playlist_jorge/FRENIYO.mp3",
+    "cover": "playlist_jorge/covers/FRENIYO.jpg",
+    "duration": 149.26
+  },
+  {
     "title": "FRIKI",
     "artist": "Gonzy",
     "album": "FRIKI",
@@ -646,6 +702,14 @@
     "audio": "playlist_jorge/Fuga.mp3",
     "cover": "playlist_jorge/covers/Fuga.jpg",
     "duration": 181.32
+  },
+  {
+    "title": "GLORIA",
+    "artist": "Los Diozes/Faenna",
+    "album": "MESÓN MASÓN",
+    "audio": "playlist_jorge/GLORIA.mp3",
+    "cover": "playlist_jorge/covers/GLORIA.jpg",
+    "duration": 196.39
   },
   {
     "title": "GRAN VÍA",
@@ -704,6 +768,22 @@
     "duration": 183.22
   },
   {
+    "title": "KIÉN E?",
+    "artist": "Los Diozes",
+    "album": "MESÓN MASÓN",
+    "audio": "playlist_jorge/KIE%CC%81N%20E%3F.mp3",
+    "cover": "playlist_jorge/covers/KIE%CC%81N%20E_.jpg",
+    "duration": 220.87
+  },
+  {
+    "title": "KIKE Y WANILLO",
+    "artist": "Los Diozes/María Peláe",
+    "album": "MESÓN MASÓN",
+    "audio": "playlist_jorge/KIKE%20Y%20WANILLO.mp3",
+    "cover": "playlist_jorge/covers/KIKE%20Y%20WANILLO.jpg",
+    "duration": 145.06
+  },
+  {
     "title": "LA 125",
     "artist": "Quevedo/Yung Beef",
     "album": "LA 125",
@@ -726,6 +806,14 @@
     "audio": "playlist_jorge/LA%20GRACIOSA.mp3",
     "cover": "playlist_jorge/covers/LA%20GRACIOSA.jpg",
     "duration": 257.75
+  },
+  {
+    "title": "LA PIOLÍN",
+    "artist": "Los Diozes",
+    "album": "MESÓN MASÓN",
+    "audio": "playlist_jorge/LA%20PIOLI%CC%81N.mp3",
+    "cover": "playlist_jorge/covers/LA%20PIOLI%CC%81N.jpg",
+    "duration": 195.68
   },
   {
     "title": "TEDDY BEAR",
@@ -758,6 +846,22 @@
     "audio": "playlist_jorge/LUCES%20AZULES.mp3",
     "cover": "playlist_jorge/covers/LUCES%20AZULES.jpg",
     "duration": 161.02
+  },
+  {
+    "title": "MALDITA FARLOPA",
+    "artist": "Los Diozes/Foyone/Dollar Selmouni",
+    "album": "MESÓN MASÓN",
+    "audio": "playlist_jorge/MALDITA%20FARLOPA.mp3",
+    "cover": "playlist_jorge/covers/MALDITA%20FARLOPA.jpg",
+    "duration": 178.7
+  },
+  {
+    "title": "MARDOSA",
+    "artist": "Los Diozes",
+    "album": "MESÓN MASÓN",
+    "audio": "playlist_jorge/MARDOSA.mp3",
+    "cover": "playlist_jorge/covers/MARDOSA.jpg",
+    "duration": 128.71
   },
   {
     "title": "ME FALTA ALGO",
@@ -848,6 +952,14 @@
     "duration": 206.94
   },
   {
+    "title": "PAYAS",
+    "artist": "Los Diozes",
+    "album": "MESÓN MASÓN",
+    "audio": "playlist_jorge/PAYAS.mp3",
+    "cover": "playlist_jorge/covers/PAYAS.jpg",
+    "duration": 275.64
+  },
+  {
     "title": "PINKY PROMISE 2",
     "artist": "La Pantera/Lucho RK/Pana YMB",
     "album": "PINKY PROMISE 2",
@@ -862,6 +974,14 @@
     "audio": "playlist_jorge/PLAYA%20DEL%20INGLE%CC%81S.mp3",
     "cover": "playlist_jorge/covers/PLAYA%20DEL%20INGLE%CC%81S.jpg",
     "duration": 237.58
+  },
+  {
+    "title": "POR ALGO SERÁ",
+    "artist": "Los Diozes",
+    "album": "MESÓN MASÓN",
+    "audio": "playlist_jorge/POR%20ALGO%20SERA%CC%81.mp3",
+    "cover": "playlist_jorge/covers/POR%20ALGO%20SERA%CC%81.jpg",
+    "duration": 159.06
   },
   {
     "title": "POR LO KE SEA",
@@ -944,6 +1064,14 @@
     "duration": 185.13
   },
   {
+    "title": "STEISY",
+    "artist": "Los Diozes",
+    "album": "MESÓN MASÓN",
+    "audio": "playlist_jorge/STEISY.mp3",
+    "cover": "playlist_jorge/covers/STEISY.jpg",
+    "duration": 257.52
+  },
+  {
     "title": "TE FALLÉ",
     "artist": "Quevedo/Sech",
     "album": "TE FALLÉ",
@@ -952,12 +1080,28 @@
     "duration": 219.51
   },
   {
+    "title": "TIEZOS",
+    "artist": "Los Diozes",
+    "album": "MESÓN MASÓN",
+    "audio": "playlist_jorge/TIEZOS.mp3",
+    "cover": "playlist_jorge/covers/TIEZOS.jpg",
+    "duration": 169.93
+  },
+  {
     "title": "Tiritando",
     "artist": "Pikeras/Chus Santana",
     "album": "Tiritando",
     "audio": "playlist_jorge/Tiritando.mp3",
     "cover": "playlist_jorge/covers/Tiritando.jpg",
     "duration": 144.77
+  },
+  {
+    "title": "TO PERDÍO",
+    "artist": "Los Diozes",
+    "album": "MESÓN MASÓN",
+    "audio": "playlist_jorge/TO%20PERDI%CC%81O.mp3",
+    "cover": "playlist_jorge/covers/TO%20PERDI%CC%81O.jpg",
+    "duration": 175.52
   },
   {
     "title": "Tropical",
@@ -990,6 +1134,14 @@
     "audio": "playlist_jorge/Tuenti%20-%20Remix.mp3",
     "cover": "playlist_jorge/covers/Tuenti%20-%20Remix.jpg",
     "duration": 182.41
+  },
+  {
+    "title": "TÚ KIERE",
+    "artist": "Los Diozes/BEJO",
+    "album": "MESÓN MASÓN",
+    "audio": "playlist_jorge/TU%CC%81%20KIERE.mp3",
+    "cover": "playlist_jorge/covers/TU%CC%81%20KIERE.jpg",
+    "duration": 175.57
   },
   {
     "title": "Universitaria",
@@ -1030,6 +1182,14 @@
     "audio": "playlist_jorge/YANKEE.mp3",
     "cover": "playlist_jorge/covers/YANKEE.jpg",
     "duration": 194.46
+  },
+  {
+    "title": "ZAHERA",
+    "artist": "Los Diozes",
+    "album": "MESÓN MASÓN",
+    "audio": "playlist_jorge/ZAHERA.mp3",
+    "cover": "playlist_jorge/covers/ZAHERA.jpg",
+    "duration": 52.95
   },
   {
     "title": "ZIZI",
