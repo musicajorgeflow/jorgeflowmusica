@@ -1,2 +1,22 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+# IMPORTANTE: lo de arriba (text=auto) deja que Git "adivine" si un archivo
+# es texto. Con audio e imagenes esa adivinanza a veces falla, y Git les
+# toca bytes (saltos de linea) creyendo que es texto, corrompiendo el
+# archivo para siempre dentro del repositorio aunque el de tu disco quede
+# intacto. Estas lineas obligan a Git a tratarlos siempre como binarios,
+# sin adivinar nunca:
+*.mp3   binary
+*.wav   binary
+*.flac  binary
+*.m4a   binary
+*.aac   binary
+*.ogg   binary
+*.opus  binary
+*.aiff  binary
+*.aif   binary
+*.jpg   binary
+*.jpeg  binary
+*.png   binary
+*.webp  binary
