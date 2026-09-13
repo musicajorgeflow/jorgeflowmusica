@@ -31,6 +31,7 @@ from urllib.parse import quote
 import base64
 import json
 import re
+import shutil
 import subprocess
 import sys
 import unicodedata
@@ -132,6 +133,56 @@ from mutagen.id3 import ID3
 from mutagen.flac import FLAC, Picture
 from mutagen.mp4 import MP4
 from mutagen.wave import WAVE
+from mutagen.aiff import AIFF
+
+
+# --------------------------------------------------------------------------
+# COMPATIBILIDAD DE NAVEGADORES
+#
+# No todos los formatos de audio suenan en todos los navegadores/moviles.
+# AIFF/AIF apenas lo reproduce Safari (Chrome, Firefox y la mayoria de
+# Android lo rechazan). FLAC/OGG/OPUS fallan en Safari/iPhone. Antes esto
+# fallaba en silencio: la cancion se anadia a library.json igualmente, pero
+# el navegador la rechazaba al intentar sonar ("el archivo puede no estar
+# disponible..."), y como extract_cover() tampoco sabia leer caratulas de
+# AIFF, esas mismas canciones se quedaban ademas sin portada.
+#
+# Ahora, si tienes ffmpeg instalado, este script convierte automaticamente
+# esos formatos "de riesgo" a un mp3 equivalente (guardado en una carpeta
+# aparte, sin tocar ni mover tu archivo original) y usa ese mp3 para la web.
+# Si no tienes ffmpeg, avisa exactamente que archivos hay que convertir a
+# mano en vez de fallar callado.
+# --------------------------------------------------------------------------
+RISKY_PLAYBACK_EXT = {".aiff", ".aif", ".flac", ".ogg", ".opus"}
+WEB_CONVERT_DIRNAME = "_web_mp3"
+
+
+def ffmpeg_bin():
+    return shutil.which("ffmpeg")
+
+
+def convert_for_web(path: Path, out_dir: Path):
+    """Convierte path a un mp3 compatible con cualquier navegador dentro de
+    out_dir (mismo nombre, extension .mp3). No toca ni borra el original.
+    Si ya existe una conversion mas reciente que el original, la reutiliza
+    en vez de volver a convertir cada vez que se ejecuta el script."""
+    ff = ffmpeg_bin()
+    if not ff:
+        return None
+    out_dir.mkdir(parents=True, exist_ok=True)
+    out_path = out_dir / (safe_stem(path.stem) + ".mp3")
+    try:
+        if out_path.exists() and out_path.stat().st_mtime >= path.stat().st_mtime:
+            return out_path
+        subprocess.run(
+            [ff, "-y", "-loglevel", "error", "-i", str(path),
+             "-vn", "-ar", "44100", "-ac", "2", "-b:a", "256k", str(out_path)],
+            check=True,
+        )
+        return out_path if out_path.exists() else None
+    except Exception as e:
+        print(f"    [!] No se pudo convertir '{path.name}' a mp3: {e}")
+        return None
 
 
 # ---------- utilidades ----------
@@ -192,6 +243,11 @@ def extract_cover(path, out_dir):
     if ext == ".wav":
         try:
             return cover_from_id3_frames(WAVE(path).tags, out_dir, stem)
+        except Exception:
+            return None
+    if ext in (".aiff", ".aif"):
+        try:
+            return cover_from_id3_frames(AIFF(path).tags, out_dir, stem)
         except Exception:
             return None
     if ext == ".flac":
@@ -304,7 +360,13 @@ def generate_library_remote(folder, base_url, mapeo):
             print(f"       Pon ahi una imagen llamada '{candidatos.split(', ')[0]}' (o similar: {candidatos}), "
                   f"no hace falta que subas nada mas a esa carpeta.")
 
-    rel = lambda p: str(p.relative_to(ROOT)).replace("\\", "/")
+    # NFC: en Mac los nombres con tildes/enes se guardan "descompuestos"
+    # (o + acento por separado). GitHub (via GitHub Desktop u otras
+    # herramientas) los vuelve a guardar "compuestos" (un solo caracter).
+    # Si no se normaliza aqui, la URL que pide el navegador no coincide
+    # byte a byte con el nombre real del archivo ya subido, y da 404 -
+    # pero SOLO en las canciones con tilde o Ñ, nunca en las demas.
+    rel = lambda p: unicodedata.normalize("NFC", str(p.relative_to(ROOT)).replace("\\", "/"))
     cover_field = quote(rel(fixed_cover), safe="/") if fixed_cover else ""
 
     tracks = []
@@ -333,6 +395,31 @@ def generate_library_remote(folder, base_url, mapeo):
 
 # ---------- generacion de un library.json a partir de audio local ----------
 
+def is_incomplete_or_broken(path: Path):
+    """Detecta archivos que parecen a medio copiar/descargar (tipico si la
+    carpeta esta en iCloud Drive, Google Drive/Dropbox con 'liberar espacio',
+    o si una copia desde un USB/AirDrop se corto a medias). Esto es justo lo
+    que antes hacia que una cancion sonara "no disponible" y sin portada
+    aunque el formato fuera perfectamente normal (mp3, wav...), y solo se
+    arreglaba borrandola y volviendola a copiar entera.
+    Devuelve un texto con el motivo, o None si el archivo esta bien."""
+    try:
+        size = path.stat().st_size
+    except Exception as e:
+        return f"no se pudo leer su tamano ({e})"
+    if size < 20 * 1024:
+        return f"solo pesa {size} bytes: no parece una cancion completa"
+    try:
+        with open(path, "rb") as fh:
+            fh.seek(0, 2)
+            leido = fh.tell()
+        if leido != size:
+            return "el archivo no se puede leer entero (posible copia/descarga a medias)"
+    except Exception as e:
+        return f"no se pudo abrir entero ({e})"
+    return None
+
+
 def generate_library(folder):
     if folder in REMOTE_PLAYLISTS:
         base_url, mapeo = REMOTE_PLAYLISTS[folder]
@@ -360,9 +447,11 @@ def generate_library(folder):
             print(f"       Pon ahi una imagen llamada '{candidatos.split(', ')[0]}' (o similar: {candidatos}).")
 
     def path_is_inside_covers(p):
-        # Nunca leer audio dentro de la carpeta covers/, aunque este anidada.
+        # Nunca leer audio dentro de covers/ ni de la carpeta de mp3
+        # convertidos automaticamente, aunque esten anidadas.
         rel_parts = p.relative_to(playlist_dir).parts
-        return any(part.lower() == "covers" for part in rel_parts[:-1])
+        excluded = {"covers", WEB_CONVERT_DIRNAME.lower()}
+        return any(part.lower() in excluded for part in rel_parts[:-1])
 
     audio_files = sorted(
         (
@@ -373,8 +462,14 @@ def generate_library(folder):
         key=lambda x: x.name.lower(),
     )
 
+    convertidos, sin_convertir, incompletos = [], [], []
     tracks = []
     for path in audio_files:
+        problema = is_incomplete_or_broken(path)
+        if problema:
+            incompletos.append((path.name, problema))
+            continue  # no se mete en library.json hasta que este completo
+
         try:
             f_easy = File(path, easy=True)
             title = (first(f_easy, "title") or path.stem).strip()
@@ -395,10 +490,26 @@ def generate_library(folder):
             if cover is None:
                 cover = fetch_itunes_cover(title, artist, covers, path.stem)
 
-        rel = lambda p: str(p.relative_to(ROOT)).replace("\\", "/")
+        # Si el formato es de riesgo (apenas se reproduce en algunos
+        # navegadores), se sirve una copia mp3 convertida en vez del
+        # original; el original nunca se toca ni se borra.
+        audio_source = path
+        if path.suffix.lower() in RISKY_PLAYBACK_EXT:
+            mp3_convertido = convert_for_web(path, music / WEB_CONVERT_DIRNAME)
+            if mp3_convertido:
+                audio_source = mp3_convertido
+                convertidos.append(path.name)
+            else:
+                sin_convertir.append(path.name)
+
+        # NFC: mismo motivo que arriba (ver comentario en generate_library_remote).
+        # Sin esto, las canciones con tilde o Ñ piden una URL con los bytes
+        # "descompuestos" del Mac, que ya no coincide con el nombre real
+        # que GitHub guarda tras subirlo, y por eso solo esas fallan (404).
+        rel = lambda p: unicodedata.normalize("NFC", str(p.relative_to(ROOT)).replace("\\", "/"))
         # La ruta local se escapa con percent-encoding para que nombres con
         # "#", "&", "?", "%", etc. no rompan la URL dentro de la web.
-        audio_field = quote(rel(path), safe="/")
+        audio_field = quote(rel(audio_source), safe="/")
 
         tracks.append({
             "title": title,
@@ -408,6 +519,35 @@ def generate_library(folder):
             "cover": quote(rel(cover), safe="/") if cover else "",
             "duration": round(duration, 2),
         })
+
+    if incompletos:
+        print(f"   [!] {len(incompletos)} archivo(s) NO se han incluido en library.json "
+              f"por parecer incompletos o corruptos:")
+        for nombre, motivo in incompletos:
+            print(f"       - {nombre}: {motivo}")
+        print("       Esto pasa sobre todo si la carpeta esta en iCloud Drive / Google Drive")
+        print("       y el archivo no se ha descargado del todo, o si una copia se corto a")
+        print("       medias. Vuelve a copiar/descargar el archivo entero (asegurate de que")
+        print("       'Mantener siempre en este Mac' este activado si usas iCloud Drive) y")
+        print("       ejecuta este script otra vez.")
+
+    pesados = [p for p in audio_files if p.stat().st_size > 95 * 1024 * 1024]
+    if pesados:
+        print(f"   [!] {len(pesados)} archivo(s) pesan mas de 95MB. GitHub rechaza subir "
+              f"archivos de mas de 100MB (fallan sin avisar en la web, igual que 'no disponible'):")
+        for p in pesados:
+            print(f"       - {p.name} ({p.stat().st_size / (1024*1024):.0f}MB)")
+
+    if convertidos:
+        print(f"   Convertidas automaticamente a mp3 (para que suenen en cualquier navegador): "
+              f"{len(convertidos)} -> {', '.join(convertidos)}")
+    if sin_convertir:
+        print(f"   [!] No tienes ffmpeg instalado, asi que estas {len(sin_convertir)} canciones "
+              f"seguiran sin sonar en Chrome/Firefox hasta que las conviertas a mp3 a mano:")
+        for nombre in sin_convertir:
+            print(f"       - {nombre}")
+        print("       Instala ffmpeg (en Mac: 'brew install ffmpeg' en la Terminal) y vuelve a "
+              "ejecutar este script para que se conviertan solas.")
 
     (ROOT / folder / "library.json").write_text(
         json.dumps(tracks, ensure_ascii=False, indent=2), encoding="utf-8"
