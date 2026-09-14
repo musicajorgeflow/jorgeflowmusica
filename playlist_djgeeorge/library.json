@@ -16,7 +16,7 @@
     "duration": 489.61
   },
   {
-    "title": "Medusa x Relacion secreta (@DJgeeorge Mashup)",
+    "title": "Anuel AA, Jhayco, JC Reyes- Medusa x Relacion secreta (@DJgeeorge Mashup)",
     "artist": "@DJgeeorge",
     "album": "@DJgeeorge",
     "audio": "playlist_djgeeorge/Anuel%20AA%2C%20Jhayco%2C%20JC%20Reyes-%20Medusa%20x%20Relacion%20secreta%20%28%40DJgeeorge%20Mashup%29.mp3",
@@ -56,12 +56,20 @@
     "duration": 292.78
   },
   {
-    "title": "CAPRICHOSO x BADGYAL (@DJgeeorge Mashup)",
+    "title": "CAPRICHOSO x BADGYAL (@DJgeeor",
     "artist": "@DJgeeorge",
     "album": "@DJgeeorge",
     "audio": "playlist_djgeeorge/CAPRICHOSO%20x%20BADGYAL%20%28%40DJgeeorge%20Mashup%2095BPM%29%20%2Aextended%2A%20.mp3",
     "cover": "playlist_djgeeorge/covers/portada.png",
     "duration": 386.59
+  },
+  {
+    "title": "DA LA LUZ x PRENDIO - MASHUP",
+    "artist": "Artista desconocido",
+    "album": "",
+    "audio": "playlist_djgeeorge/DA%20LA%20LUZ%20x%20PRENDIO%20-%20MASHUP.wav",
+    "cover": "playlist_djgeeorge/covers/portada.png",
+    "duration": 287.71
   },
   {
     "title": "DE LEJITOS REMIX X LOVE (@DJgeeorge Mashup ).mp3",
@@ -136,14 +144,6 @@
     "duration": 223.69
   },
   {
-    "title": "Quiero Mas x Pinky Promise 2 (@DJgeeorge MASHUP)",
-    "artist": "Artista desconocido",
-    "album": "",
-    "audio": "playlist_djgeeorge/Quiero%20Mas%20x%20Pinky%20Promise%202%20%28%40DJgeeorge%20MASHUP%29.wav",
-    "cover": "playlist_djgeeorge/covers/portada.png",
-    "duration": 381.08
-  },
-  {
     "title": "La Disco Resplandece x Relacion Secreta (@DJgeeorge Mashup)",
     "artist": "Jc Reyes x Bandaga x LMDA x @DJgeeorge",
     "album": "@DJgeeorge",
@@ -171,8 +171,8 @@
     "title": "yeezy x bnb x x.o.x.o LIVE MASHUP (final drums)",
     "artist": "Artista desconocido",
     "album": "",
-    "audio": "playlist_djgeeorge/yeezy%20x%20bnb%20x%20x.o.x.o%20LIVE%20MASHUP%20%28final%20drums%29.wav",
+    "audio": "playlist_djgeeorge/yeezy%20x%20bnb%20x%20x.o.x.o%20LIVE%20MASHUP%20%28final%20drums%29.mp3",
     "cover": "playlist_djgeeorge/covers/portada.png",
-    "duration": 377.0
+    "duration": 378.02
   }
 ]
