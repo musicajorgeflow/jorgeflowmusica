@@ -486,3 +486,14 @@ initTheme();
   // welcome screen — this is what used to let JORGE's songs show up on
   // load with no password prompt at all.
 })();
+
+// Registro del service worker: solo acelera la carga de la app (HTML/CSS/JS)
+// y permite instalarla. No descarga ni guarda canciones ni portadas.
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker.register("service-worker.js").catch(() => {
+      // Si falla (p.ej. abierto como file:// en local sin servidor), la
+      // web sigue funcionando exactamente igual, solo sin este extra.
+    });
+  });
+}
