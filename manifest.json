@@ -1,0 +1,11 @@
+{
+  "background_color": "#ffffff",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "jorgeflow.qd",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "jorgeflow.qd",
+  "start_url": "/",
+  "theme_color": "#080808"
+}
